@@ -268,6 +268,15 @@ arturo@arturo$ scp /target/universal/kafka.zip eglobal@server-dell:/home/eglobal
 arturo@arturo$ ssh eglobal@server-dell
 password :******
 DELL:eglobal~$ cd /home/eglobal/Software/NewUtils/
+#Descomprimir el zip
+Dell:eglobal~$ unzip kafka-manager.zip
+Dell:eglobal~$ cd kafka-manager/conf
+#Modificamos el fichero para apuntar al zookeeper de server-dell.
+Dell:eglobal~$ vim application.conf 
+#Modificamos la siguiente linea quedando asi.
+kafka-manager.zkhosts="server-dell:2181"
+#Guardamos Esq + :wq y salimos de vim
+DELL:eglobal~$cd ../ && cd bin/
 DELL:eglobal~$  ./kafka-manager -Dhttp.port=8180
 ```
 
