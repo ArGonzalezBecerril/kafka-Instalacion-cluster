@@ -17,7 +17,7 @@ Donde :
 
 # Descargar las fuentes de kafka!
 .
-> Iniciare el tutorial desde una terminal en mi equipo arturo@arturo y me conectare a server-dell y a los slaves mediante ssh(Para esto nuestro equipo debe tener registrados a todos los slaves en /etc/hosts, incluido server-dell y lógicamente debemos estar conectados mediante cable físico a la red del cluster.
+> Iniciare desde una terminal en mi equipo arturo@arturo y me conectare a server-dell y a los slaves mediante ssh(Para esto nuestro equipo debe tener registrados a todos los slaves en /etc/hosts, incluido server-dell y lógicamente debemos estar conectados mediante cable físico a la red del cluster.
 .
 ```sh
 arturo@arturo$ pwd
